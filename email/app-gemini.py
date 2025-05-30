@@ -94,7 +94,7 @@ def send_email(service, to_email, subject, html_content):
         return False, f"Error sending email: {str(e)}"
 
 # Define the path to the templates folder
-TEMPLATES_DIR = "/email/Templates"
+TEMPLATES_DIR = "TEMPLATES_DIR = os.path.join(os.path.dirname(__file__), "Templates")"
 
 def get_html_files(directory):
     """Returns a list of HTML files in the specified directory."""
